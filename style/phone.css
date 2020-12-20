@@ -1,0 +1,36 @@
+
+#cards{
+    flex-direction: column;
+}
+#card1{
+    width: 80%;
+}
+#card2{
+    width: 80%;
+}
+#card3{
+    width: 80%;
+}
+.form{
+    flex-direction: column;
+}
+#contactpic{
+    width: 70%;
+}
+#homeimage{
+    margin: 0px 0px 0px 0px;
+    width: 370px;
+    height: 384px;
+}
+#home{
+    flex-direction: column;
+}
+.mainpage {
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    height: 600px;
+  }
+#hometext{
+    position: relative;
+    bottom: 60px;
+}

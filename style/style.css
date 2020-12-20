@@ -1,0 +1,226 @@
+/* Fonts: */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+/* CSS RESET: */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+/* Scrool: */
+html{
+  scroll-behavior: smooth;
+}
+/* Background: */
+.mainpage {
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  height: 500px;
+}
+/* Navigation Bar: */
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#navigationheading {
+  font-family: "Roboto Slab", serif;
+}
+#navigationitems {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  font-family: "Suravaram", serif;
+}
+.navigationlinks {
+  text-decoration: none;
+  color: black;
+  font-family: "Ramabhadra", sans-serif;
+  position: relative;
+}
+.navigationlinks::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  top: 100%;
+  left: 0;
+  transition: all 0.4s;
+}
+.navigationlinks:hover::before {
+  width: 100%;
+}
+/* Hoem Section: */
+#home {
+  display: flex;
+}
+#homeimage {
+  height: 500px;
+  width: 500px;
+  margin-left: 180px;
+}
+#hometext {
+  margin-top: 0px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#hometext p {
+  font-family: 'Libre Baskerville', serif;
+
+}
+#homeheading {
+  font-family: "Acme", sans-serif;
+}
+.buttons {
+  position: relative;
+  top: 4px;
+  display: flex;
+}
+.buttonlinks {
+  margin: 3px 8px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 7px 9px;
+  background-color: #81ecec;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s;
+  font-family: "Kanit", sans-serif;
+}
+.buttonlinks::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  transform: translateX(-100%) rotate(46deg);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.buttonlinks:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
+.buttonlinks:hover {
+  background-color: black;
+  color: white;
+}
+
+/* About: */
+#about {
+  margin-top: 20px;
+}
+#about h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Russo One", sans-serif;
+}
+#about p {
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+}
+#cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card1 {
+  width: 25%;
+}
+#card2 {
+  width: 25%;
+}
+#card3 {
+  width: 25%;
+}
+.card {
+  margin-top: 10px;
+  border: 2px solid #7f8c8d;
+  text-align: center;
+  padding: 7px 9px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#aboutimg {
+  width: 100%;
+  height: 320px;
+}
+.bottomside p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.bottomside h1 {
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 5px;
+}
+
+/* Contact Section: */
+#contact {
+  margin-top: 50px;
+}
+#contact h2 {
+  text-align: center;
+  font-size: 2.7rem;
+  font-family: "Russo One", sans-serif;
+}
+#contact p {
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+}
+.form {
+  display: flex;
+}
+#contactpic {
+  width: 40%;
+  margin-left: 10%;
+}
+#contactform {
+  width: 20%;
+  margin-left: 23px;
+}
+#contactform input {
+  padding: 10px;
+  margin-bottom: 7px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+input:focus {
+  outline-width: 0;
+}
+textarea:focus {
+  outline-width: 0;
+}
+.formsubmit {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid #1e272e;
+  color: #1e272e;
+  position: relative;
+  transition: all 0.2s;
+  padding: 12px 15px;
+}
+.formsubmit:hover{
+  background-color:#1e272e;
+  color: white;
+}
+#formed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Copright: */
+#copyright {
+  height: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
